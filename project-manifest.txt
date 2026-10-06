@@ -1,0 +1,6 @@
+Smart Supply Chain Intelligence — FMCG Analytics Portfolio
+Static HTML/CSS/Vanilla JS website
+No backend · No database · No build step · No blue theme
+Primary entry: index.html
+Analysis package: assets/data/
+Source PDFs: assets/pdf/

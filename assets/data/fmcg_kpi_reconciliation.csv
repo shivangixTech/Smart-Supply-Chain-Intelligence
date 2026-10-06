@@ -1,0 +1,15 @@
+kpi,stage5_reported,presentation_reported,csv_recomputed,difference,final_website_value,note
+Record count,"190,740","190,740","190,740",0,"190,740",Exact match.
+Columns,14,Not stated,14,0,14,Exact match for raw schema.
+Date range,2022-2024,2022-2024,2022-01-21 to 2024-12-31,CSV begins 21 Jan 2022,2022-01-21 to 2024-12-31,"Use exact dates, not only years."
+Brands,10,18,10,Presentation +8,10,CSV confirms Stage 5 report; presentation count is not supported.
+Categories,20,20,20,0,20,Exact match.
+Regions,5,All major regions,5,N/A,5,"North, South, East, West and Central."
+Channels,4,Not stated,4,0,4,"Kirana, Online, Retail, Supermarket."
+Total revenue,Mislabelled as Daily Sales in Appendix A,Rs 126.61 Cr,Rs 126.6104 Cr,Rs 0.0004 Cr,Rs 126.61 Cr,Presentation is confirmed by CSV.
+Total units sold,Not clearly reported as total,13.47 Million,13.474517 Million,0.004517 Million,13.47 Million,Presentation is confirmed after rounding.
+Average delivery days,Roughly 3 days; chart artifact 297-304,3.0 days,2.9963 days,-0.0037 days,3.00 days,Use actual 1-5 day averages; never display 297-304 as days.
+Fill rate,90.76%,90.82%,90.8172%,vs Stage 5: 0.0572 pp,90.82%,Ratio of totals matches presentation. Row-average DAX would incorrectly produce a much larger value.
+Sell-through rate,23.68%,Not stated,25.7291% weighted; 36.2886% row-average,Weighted vs report: 2.0491 pp,25.73%,Reported 23.68% cannot be reproduced from the full CSV using Appendix A or Appendix C formulas.
+Daily sales,"2,165.62",Not stated,12522.79 units/calendar day,10357.17,12522.79 units/day,"2,165.62 may reflect an undocumented filter or a misnamed measure."
+Promotion lift - units,"Patanjali 41%, Nestle 37%, Britannia 36%, HUL 35%",Not numeric,Overall 28.69%; top brand Dabur 31.39%,Reported brand ranking not reproduced,Overall 28.69%,"Observational association, not causal impact."
