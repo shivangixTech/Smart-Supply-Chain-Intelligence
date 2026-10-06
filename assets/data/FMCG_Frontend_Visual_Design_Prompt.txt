@@ -1,0 +1,1265 @@
+FRONTEND DESIGN PROMPT — HOW THE FMCG PORTFOLIO WEBSITE SHOULD LOOK
+==================================================================
+
+PROJECT
+-------
+Smart Supply Chain Intelligence — FMCG Analytics Portfolio
+
+PURPOSE
+-------
+Design a premium, elegant, smooth, highly usable frontend for a static FMCG analytics portfolio website.
+
+The website should look like a professional consulting case study mixed with a modern data-intelligence product.
+
+It must not look like:
+
+- a basic admin dashboard
+- a Power BI copy
+- a generic SaaS template
+- a college mini-project
+- a neon cyberpunk website
+- a blue corporate dashboard
+- a page full of random cards
+- a website using emojis as icons
+
+Use only:
+
+- HTML
+- CSS
+- Vanilla JavaScript
+- SVG icons and illustrations
+- Chart.js, ECharts, Plotly.js, or D3.js
+
+Do not use:
+
+- Next.js
+- React
+- Backend
+- Database
+- Blue colors
+- Cyan colors
+- Teal-blue shades
+- Excessive glassmorphism
+- Excessive gradients
+
+==================================================================
+OVERALL VISUAL FEEL
+==================================================================
+
+The website should feel:
+
+- premium
+- editorial
+- elegant
+- warm
+- confident
+- data-rich
+- modern
+- smooth
+- minimal but not empty
+- attractive enough for a professional portfolio
+
+The visual direction should combine:
+
+1. Luxury editorial design
+2. Premium consulting report
+3. Modern analytics product
+4. FMCG supply-chain storytelling
+
+The website should use strong typography, clean spacing, premium section transitions, subtle motion, and meaningful charts.
+
+The website should not depend only on dashboard statistics.
+
+It must present:
+
+- project story
+- dataset
+- methodology
+- analysis
+- charts
+- data tables
+- business insights
+- recommendations
+- PDFs
+- author portfolio information
+
+==================================================================
+COLOR SYSTEM
+==================================================================
+
+Strict rule:
+
+Do not use blue, cyan, navy blue, royal blue, electric blue, or teal-blue anywhere as the primary design language.
+
+Use this premium color palette:
+
+Dark background:
+#0E0D0B
+
+Primary surface:
+#171410
+
+Secondary surface:
+#201C17
+
+Raised surface:
+#28221B
+
+Warm gold:
+#D8B36A
+
+Soft gold:
+#E8C982
+
+Bronze:
+#A67C52
+
+Muted emerald:
+#6D9B74
+
+Warm amber:
+#C9913E
+
+Muted coral:
+#C66B5D
+
+Primary text:
+#F4EFE7
+
+Secondary text:
+#BEB4A5
+
+Soft border:
+rgba(216, 179, 106, 0.18)
+
+Light section background:
+#F6F0E7
+
+Light surface:
+#FFFDF8
+
+Dark text on light sections:
+#211D18
+
+The website can alternate between:
+
+- dark premium sections
+- light editorial sections
+
+Do not use pure white everywhere.
+Do not use pure black everywhere.
+
+Use gold only for:
+
+- highlights
+- active navigation
+- important numbers
+- section dividers
+- small visual accents
+
+Do not make every chart gold.
+
+==================================================================
+TYPOGRAPHY
+==================================================================
+
+Heading font options:
+
+- Cormorant Garamond
+- Fraunces
+- DM Serif Display
+- Playfair Display
+
+Body font options:
+
+- Inter
+- Manrope
+- Plus Jakarta Sans
+- Geist
+
+Recommended pairing:
+
+Headings:
+Cormorant Garamond
+
+Body:
+Inter
+
+Typography style:
+
+- Large elegant headings
+- Short paragraphs
+- Strong hierarchy
+- Comfortable line height
+- Small uppercase labels for metadata
+- Avoid giant oversized headings that waste space
+
+Example hierarchy:
+
+Hero title:
+64px desktop
+42px tablet
+34px mobile
+
+Section title:
+42px desktop
+32px tablet
+28px mobile
+
+Card title:
+18px
+
+Body:
+16px
+
+Small labels:
+12px to 13px
+
+==================================================================
+PAGE STRUCTURE
+==================================================================
+
+The website should have these major sections:
+
+1. Premium Landing Page
+2. Project Introduction
+3. Business Problem
+4. Dataset Overview
+5. Executive Dashboard
+6. Revenue Analysis
+7. Sales Analysis
+8. Inventory Intelligence
+9. Supply Chain Analysis
+10. Promotion Analysis
+11. Regional Analysis
+12. Statistical Analysis
+13. Deep Insights
+14. Methodology
+15. Recommendations
+16. Data Ethics
+17. Project Reports
+18. Portfolio Case Study
+19. Footer
+
+The website may be:
+
+- one smooth long-form page
+- or multiple static HTML pages
+
+If using one page, use sticky navigation and smooth anchor scrolling.
+
+==================================================================
+1. LANDING PAGE DESIGN
+==================================================================
+
+The landing page should immediately communicate:
+
+- what the project is
+- how much data was analyzed
+- what business problems it solves
+- why the project matters
+
+Layout:
+
+Left side:
+- small project label
+- main project title
+- short description
+- metadata
+- CTA buttons
+
+Right side:
+- custom SVG illustration
+- supply-chain system visual
+- warehouse
+- product boxes
+- retail shelf
+- transport route
+- analytics chart
+- subtle animated paths
+
+Hero title:
+
+Smart Supply Chain Intelligence
+
+Hero subtitle:
+
+Turning 190,740 FMCG transactions into actionable sales, inventory, promotion, and logistics intelligence.
+
+Hero metadata:
+
+- 190,740 Records
+- 14 Variables
+- 2022–2024
+- 20 Categories
+- 5 Regions
+- 4 Channels
+
+Hero buttons:
+
+Primary:
+Explore Dashboard
+
+Secondary:
+View Full Report
+
+Optional:
+Explore Dataset
+
+Hero section requirements:
+
+- full viewport or near full viewport
+- premium balanced spacing
+- no huge empty area
+- no random floating cards
+- no blue gradient
+- subtle gold line decorations
+- elegant SVG illustration
+- smooth scroll cue at bottom
+
+==================================================================
+2. NAVIGATION
+==================================================================
+
+Use a sticky premium navigation bar.
+
+Desktop:
+
+Left:
+- project logo or monogram
+- project name
+
+Center:
+- Overview
+- Dashboard
+- Analysis
+- Dataset
+- Methodology
+- Reports
+
+Right:
+- View Report button
+- Theme toggle if needed
+
+Navigation style:
+
+- transparent at top
+- solid dark surface after scroll
+- active section shown using gold underline
+- smooth transition
+- no bulky sidebar on the landing page
+
+On dashboard pages, a compact left sidebar may be used.
+
+Mobile:
+
+- hamburger menu
+- smooth slide-in panel
+- clear close button
+- no overcrowding
+
+==================================================================
+3. PROJECT INTRODUCTION SECTION
+==================================================================
+
+Use a light editorial section after the hero.
+
+Layout:
+
+Left:
+- section number
+- heading
+- business problem
+
+Right:
+- short project explanation
+- key objective
+- stakeholder list
+
+Do not use four identical cards.
+
+Use:
+
+- vertical divider
+- bold pull quote
+- short text blocks
+- one elegant SVG icon cluster
+
+Example content blocks:
+
+Business Problem
+FMCG companies struggle to balance demand, stock availability, promotion performance, delivery speed, and regional allocation.
+
+Project Objective
+Transform raw FMCG transactions into a decision-support system for business, marketing, inventory, and supply-chain teams.
+
+Stakeholders
+Business Managers
+Marketing Teams
+Inventory Managers
+Supply Chain Teams
+
+==================================================================
+4. DATASET OVERVIEW SECTION
+==================================================================
+
+The dataset section must present real data, not only summary statistics.
+
+Layout:
+
+Top:
+- dataset title
+- short description
+- data-quality status
+
+Below:
+- metadata strip
+- schema table
+- sample data table
+
+Metadata strip:
+
+- Rows
+- Columns
+- Date Range
+- Brands
+- Categories
+- Regions
+- Channels
+- Missing Values
+- Duplicate Rows
+
+Schema table:
+
+Column
+Type
+Description
+Example
+
+Sample data table:
+
+- sticky header
+- horizontal scroll on mobile
+- filter controls
+- search
+- sort
+- pagination
+- export CSV
+- row detail modal
+
+Visual style:
+
+- dark table surface
+- fine gold dividers
+- alternating subtle row tone
+- no thick borders
+- hover highlight
+- compact but readable
+
+==================================================================
+5. EXECUTIVE DASHBOARD
+==================================================================
+
+The dashboard should not be the first thing the user sees.
+
+It should appear after the project context.
+
+Use a clean dashboard area with:
+
+Top row:
+- Total Revenue
+- Total Units Sold
+- Fill Rate
+- Average Delivery Days
+- Sell-Through Rate
+- Promotion Lift
+
+Each KPI block should include:
+
+- metric name
+- value
+- small comparison label
+- formula tooltip
+- tiny sparkline
+- short interpretation
+
+Example:
+
+Total Revenue
+₹126.61 Cr
++12.8% compared with previous period
+
+Do not create oversized cards.
+
+Use a flat premium layout with fine borders.
+
+Main dashboard grid:
+
+- Revenue Trend
+- Brand Contribution
+- Regional Performance
+- Channel Mix
+- Inventory Health
+- Delivery Status
+- Promotion Lift
+
+Use one strong visual per question.
+
+==================================================================
+6. CHART VISUAL STYLE
+==================================================================
+
+Charts must match the premium palette.
+
+Recommended chart colors:
+
+Gold:
+#D8B36A
+
+Soft gold:
+#E8C982
+
+Bronze:
+#A67C52
+
+Muted emerald:
+#6D9B74
+
+Amber:
+#C9913E
+
+Coral:
+#C66B5D
+
+Warm cream:
+#D9CFC0
+
+Dark brown:
+#5A4635
+
+Chart rules:
+
+- no rainbow palette
+- no blue
+- no 3D
+- no unnecessary shadows
+- no heavy grid lines
+- no truncated axes
+- readable labels
+- direct labels where useful
+- tooltips with business interpretation
+- smooth but short transitions
+
+Use:
+
+- line charts for time trends
+- horizontal bar charts for rankings
+- heatmaps for seasonal patterns
+- scatter plots for relationships
+- box plots for distributions
+- stacked bars for composition
+- Pareto charts for concentration
+- data tables for exact records
+
+Avoid:
+
+- radar charts
+- large multi-slice pie charts
+- decorative charts
+- multiple gauges
+- meaningless animation
+
+==================================================================
+7. REVENUE ANALYSIS SECTION
+==================================================================
+
+Use a dark section.
+
+Layout:
+
+Left:
+- large revenue trend chart
+
+Right:
+- summary insight
+- top brand
+- top category
+- best region
+
+Below:
+- brand revenue ranking
+- category contribution
+- region contribution
+- channel contribution
+- top SKU table
+
+Add a narrative insight panel:
+
+Example:
+
+Revenue is concentrated among the top five brands, which indicates dependency risk and an opportunity to strengthen mid-tier brands.
+
+Use:
+
+- callout number
+- evidence
+- action
+
+==================================================================
+8. SALES ANALYSIS SECTION
+==================================================================
+
+Use a light section.
+
+Include:
+
+- monthly sales trend
+- weekday vs weekend comparison
+- category velocity
+- brand ranking
+- seasonal heatmap
+- top and bottom SKU list
+- sales distribution
+
+Use an editorial two-column layout.
+
+Do not place every chart inside a separate floating card.
+
+Some charts can appear directly on the page with subtle separators.
+
+==================================================================
+9. INVENTORY INTELLIGENCE SECTION
+==================================================================
+
+Use a darker, more operational visual tone.
+
+Include:
+
+- sell-through rate
+- stock utilization
+- remaining inventory
+- stockout risk
+- overstock risk
+- reorder priority
+- dead-stock candidates
+
+Visuals:
+
+- inventory risk matrix
+- stock vs units sold scatter plot
+- reorder-priority table
+- category stock-health bars
+- brand-category matrix
+
+Status colors:
+
+Healthy:
+Muted emerald
+
+Watch:
+Warm amber
+
+Critical:
+Muted coral
+
+Every status must also show:
+
+- label
+- value
+- explanation
+
+Do not rely only on color.
+
+==================================================================
+10. SUPPLY CHAIN SECTION
+==================================================================
+
+Use:
+
+- custom SVG route illustration
+- warehouse icon
+- transport icon
+- channel performance chart
+- region performance chart
+- delivery status distribution
+- fill-rate performance
+- alert table
+
+Suggested layout:
+
+Top:
+- large SVG supply-chain flow
+
+Middle:
+- delivery by channel
+- fill rate by region
+
+Bottom:
+- operational alerts
+- delayed SKU table
+- recommended actions
+
+Do not show the reported 297–304 values as literal delivery days.
+
+Use actual CSV-based 1–5 day averages.
+
+==================================================================
+11. PROMOTION ANALYSIS SECTION
+==================================================================
+
+Use a warm beige or cream section.
+
+Include:
+
+- promoted vs non-promoted sales
+- promoted vs non-promoted revenue
+- lift by brand
+- lift by category
+- lift by region
+- strong campaigns
+- weak campaigns
+
+Add a visible disclaimer:
+
+The analysis identifies associations in the available dataset and does not prove causal impact.
+
+Use muted emerald for positive lift.
+Use coral for weak or negative lift.
+
+Do not overstate results.
+
+==================================================================
+12. REGIONAL ANALYSIS SECTION
+==================================================================
+
+Use an India-inspired SVG abstraction.
+
+Do not use an inaccurate detailed map unless correct coordinates are available.
+
+Show:
+
+- North
+- South
+- East
+- West
+- Central
+
+Include:
+
+- regional revenue
+- units sold
+- fill rate
+- delivery
+- promotion response
+- inventory risk
+
+Use hover interaction:
+
+When hovering a region:
+- highlight the region block
+- update the summary values
+- show the top category
+- show the main risk
+
+==================================================================
+13. STATISTICAL ANALYSIS SECTION
+==================================================================
+
+Use a premium technical layout.
+
+Top toggle:
+
+Business View
+Technical View
+
+Business View:
+
+- plain-language explanation
+- practical meaning
+- key finding
+- recommendation
+
+Technical View:
+
+- test name
+- formula
+- p-value
+- effect size
+- confidence interval
+- assumptions
+- limitations
+
+Include:
+
+- correlation matrix
+- distribution chart
+- outlier chart
+- promotion comparison
+- weekday vs weekend comparison
+
+Avoid overwhelming the user.
+
+Use expandable detail blocks.
+
+==================================================================
+14. DEEP INSIGHTS SECTION
+==================================================================
+
+This should be one of the strongest portfolio sections.
+
+Do not show only chart tiles.
+
+Each insight should use a story format:
+
+Insight Number
+Title
+Key Metric
+Observation
+Evidence
+Business Meaning
+Recommended Action
+Stakeholder
+
+Example layout:
+
+01
+PROMOTION RESPONSE
+
++18.4%
+Median unit-sales increase during promotion periods
+
+Promotions appear more effective in selected categories and regions.
+
+Action:
+Scale campaigns only where the response remains consistent.
+
+Use large typography and one supporting mini chart.
+
+==================================================================
+15. METHODOLOGY SECTION
+==================================================================
+
+Use an elegant horizontal SVG pipeline.
+
+Raw CSV
+→ Validation
+→ Cleaning
+→ Feature Engineering
+→ EDA
+→ KPI Construction
+→ Business Insights
+→ Dashboard
+
+Each stage should be clickable.
+
+On click:
+- show stage description
+- show tools
+- show output
+- show key decision
+
+Use icons:
+
+- file
+- shield check
+- filter
+- function
+- chart
+- calculator
+- lightbulb
+- dashboard
+
+==================================================================
+16. RECOMMENDATIONS SECTION
+==================================================================
+
+Use four stakeholder columns or tabs:
+
+- Business
+- Marketing
+- Inventory
+- Supply Chain
+
+Each recommendation should show:
+
+- action
+- supporting KPI
+- evidence
+- expected outcome
+- priority
+- timeframe
+
+Priority badges:
+
+High
+Medium
+Low
+
+Use:
+
+High:
+Muted coral
+
+Medium:
+Warm amber
+
+Low:
+Muted emerald
+
+Do not use generic recommendations.
+
+==================================================================
+17. DATA ETHICS SECTION
+==================================================================
+
+Use a calm light section.
+
+Show four pillars using clean SVG icons:
+
+Privacy
+Transparency
+Fairness
+Accountability
+
+Each pillar should have:
+
+- one-line explanation
+- how the project applies it
+- limitation or risk
+
+Also include:
+
+- no personal customer data
+- no individual profiling
+- no unfair brand labeling
+- transparent formulas
+- visible limitations
+- accessible color logic
+
+Do not make this section look decorative.
+It should feel meaningful.
+
+==================================================================
+18. PROJECT REPORT SECTION
+==================================================================
+
+Show both PDFs as premium document previews.
+
+Document 1:
+
+Stage 5 Dashboard Report
+21 pages
+Dashboard Design, Stakeholder Reporting, KPI Logic, Recommendations
+
+Document 2:
+
+Final Jury Presentation
+16 slides
+Data Ethics, EDA, Dashboard, Recommendations
+
+Each document preview should include:
+
+- cover thumbnail
+- title
+- page count
+- short description
+- open full-screen button
+- download button
+
+Use a clean book-cover layout.
+
+Do not use plain text links only.
+
+==================================================================
+19. PORTFOLIO CASE STUDY SECTION
+==================================================================
+
+Use a strong editorial section.
+
+Include:
+
+Project:
+Smart Supply Chain Intelligence
+
+Role:
+Data Analysis, Dashboard Design, Business Intelligence, Data Storytelling
+
+Tools:
+Python
+Pandas
+Power BI
+Power Query
+DAX
+HTML
+CSS
+JavaScript
+
+Show:
+
+- challenge
+- approach
+- solution
+- result
+- key learning
+- future work
+
+Author:
+
+Shivangi Dwivedi
+B.Tech Artificial Intelligence
+JLU
+
+Use a professional profile block.
+
+Do not make it look like a resume template.
+
+==================================================================
+20. FOOTER
+==================================================================
+
+Footer should include:
+
+- project name
+- author
+- quick links
+- report links
+- technology stack
+- year
+- short project summary
+
+Use a dark surface with a thin gold top border.
+
+No huge footer.
+
+==================================================================
+SVG DESIGN REQUIREMENTS
+==================================================================
+
+Use custom SVG illustrations for:
+
+- hero supply-chain system
+- dataset pipeline
+- warehouse
+- transport
+- inventory boxes
+- product shelf
+- charts
+- India region abstraction
+- data ethics pillars
+- report documents
+
+SVG style:
+
+- thin clean strokes
+- warm gold
+- bronze
+- cream
+- muted emerald
+- no blue
+- minimal detail
+- premium geometry
+- subtle animation only
+
+Animation ideas:
+
+- route line slowly drawing
+- small package moving through supply-chain path
+- chart bars rising once on view
+- soft icon hover movement
+- section line reveal
+
+Do not use:
+
+- bouncing icons
+- spinning objects
+- continuous distracting motion
+- cartoon illustrations
+
+==================================================================
+MICRO-INTERACTIONS
+==================================================================
+
+Use:
+
+- smooth button hover
+- 150–250ms transitions
+- subtle elevation
+- gold underline
+- chart tooltip fade
+- table row highlight
+- active filter chip
+- section reveal
+- sticky navigation update
+
+Do not use:
+
+- dramatic zoom
+- excessive parallax
+- scroll hijacking
+- long animation
+- autoplay carousel
+- motion on every element
+
+==================================================================
+FILTER BAR DESIGN
+==================================================================
+
+Global filter bar should include:
+
+- date range
+- brand
+- category
+- region
+- channel
+- segment
+- pack type
+- promotion status
+
+Desktop:
+
+- sticky horizontal bar
+- compact dropdowns
+- selected filter chips
+- reset-all button
+
+Mobile:
+
+- filter drawer
+- apply button
+- clear button
+- result count
+
+The filter bar should feel clean and premium.
+
+Do not make it bulky.
+
+==================================================================
+DATA TABLE DESIGN
+==================================================================
+
+The table should include:
+
+- sticky header
+- search
+- sorting
+- pagination
+- column selector
+- export
+- row count
+- row detail drawer
+
+Use compact spacing.
+
+Table colors:
+
+Header:
+#201C17
+
+Rows:
+#171410
+
+Hover:
+rgba(216, 179, 106, 0.08)
+
+Border:
+rgba(216, 179, 106, 0.12)
+
+Text:
+#F4EFE7
+
+Secondary:
+#BEB4A5
+
+==================================================================
+RESPONSIVE DESIGN
+==================================================================
+
+Desktop:
+- wide editorial layout
+- 12-column grid
+- generous but controlled spacing
+
+Laptop:
+- reduce side padding
+- preserve chart readability
+
+Tablet:
+- stack chart pairs
+- compact navigation
+- wrap filters
+
+Mobile:
+- single-column layout
+- filter drawer
+- horizontal table scroll
+- smaller typography
+- compact SVG
+- bottom-safe navigation spacing
+- no tiny chart labels
+
+==================================================================
+ACCESSIBILITY
+==================================================================
+
+Include:
+
+- keyboard navigation
+- visible focus state
+- semantic HTML
+- aria labels
+- descriptive chart labels
+- sufficient color contrast
+- text labels with status colors
+- reduced-motion support
+- accessible PDF buttons
+- alt text for illustrations
+
+Color must never be the only signal.
+
+==================================================================
+PERFORMANCE
+==================================================================
+
+The website should remain smooth.
+
+Use:
+
+- optimized SVG
+- lazy-loaded charts
+- compressed JSON
+- client-side pagination
+- debounced search
+- limited DOM rows
+- efficient resize handling
+- minimal third-party libraries
+
+Do not load the entire 190,740-row CSV into the browser.
+
+==================================================================
+FINAL VISUAL QUALITY CHECK
+==================================================================
+
+Before finishing, verify:
+
+- no blue color remains
+- no emoji icons remain
+- no generic admin-template appearance
+- landing page clearly explains the project
+- dataset is visibly presented
+- charts are readable
+- text is not cramped
+- sections have a clear narrative
+- buttons look consistent
+- mobile layout works
+- PDFs are easy to open
+- SVG illustrations match the premium palette
+- animations remain subtle
+- business insights are clearly visible
+- the website looks publishable in a professional portfolio
+
+FINAL RESULT
+------------
+
+Create a website that looks like a premium data-intelligence case study, not a classroom dashboard.
+
+It should be visually attractive, smooth, easy to understand, analytically rich, and ready to publish as a professional portfolio project.

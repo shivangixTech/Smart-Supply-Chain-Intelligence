@@ -1,0 +1,1566 @@
+MASTER PROMPT — PREMIUM FMCG DATA ANALYTICS PORTFOLIO WEBSITE
+============================================================
+
+PROJECT NAME
+------------
+Smart Supply Chain Intelligence — FMCG Analytics Portfolio
+
+PRIMARY GOAL
+------------
+Create a complete, premium, smooth, clean, publishable FMCG data analytics portfolio website using:
+
+- HTML
+- CSS
+- Vanilla JavaScript
+- Python for CSV analysis and preprocessing
+- Chart.js, ECharts, Plotly.js, or D3.js
+- Lucide icons, Heroicons, or custom inline SVG icons
+
+Do NOT use:
+
+- Next.js
+- React
+- Backend
+- Database
+- Authentication
+- Blue, cyan, teal-blue, navy-blue, or common dashboard blue themes
+- Generic admin dashboard templates
+- Fake KPI values when the CSV can be analyzed
+- Excessive gradients, neon effects, or childish visuals
+
+The final website must be fully static and deployable on:
+
+- GitHub Pages
+- Netlify
+- Vercel static hosting
+
+The work must happen in two major phases:
+
+1. Analyze the CSV using Python
+2. Build the website using the verified analysis output
+
+Do not start building the website before the CSV analysis is complete.
+
+============================================================
+SOURCE MATERIAL THAT MUST BE USED
+============================================================
+
+The website must use information from all three sources:
+
+1. FMCG Stage 5 Dashboard Report PDF
+2. Smart Supply Chain Intelligence Final Jury Presentation PDF
+3. FMCG CSV dataset using the following schema and sample format
+
+Sample CSV columns:
+
+date
+sku
+brand
+segment
+category
+channel
+region
+pack_type
+price_unit
+promotion_flag
+delivery_days
+stock_available
+delivered_qty
+units_sold
+
+Sample rows:
+
+2022-01-21,AT-001,Dabur,Grains-Seg1,Atta,Online,WestIndia,Packet,41.101734685213600,0,4,142,191,78
+2022-01-21,AT-001,Dabur,Beverages-Seg1,Atta,Kirana,CentralIndia,Pouch,47.11959653723730,0,1,229,329,71
+2022-01-21,AT-001,Nestle,Grains-Seg1,Atta,Online,EastIndia,Tin,38.09756150860700,1,2,312,133,99
+2022-01-21,AT-001,HUL,Staples-Seg1,Atta,Supermarket,SouthIndia,Carton,44.2346574447722,0,4,97,185,77
+2022-01-21,AT-001,Parle,Grains-Seg1,Atta,Kirana,SouthIndia,Pouch,41.47048078230810,0,2,398,213,82
+2022-01-21,AT-001,Amul,Cleaning-Seg1,Atta,Supermarket,EastIndia,Packet,39.83946378449540,0,5,157,150,70
+2022-01-22,AT-001,Parle,Beverages-Seg1,Atta,Online,EastIndia,Bottle,43.60457015228790,1,4,214,354,107
+
+Important:
+
+- Use the actual uploaded CSV when available.
+- Do not invent complete-data insights from the seven sample rows.
+- The sample rows are only for schema understanding and UI prototype structure.
+- Verify all report-level KPI values against the full CSV.
+- If the CSV results differ from the PDFs, show both:
+  - “Reported dashboard value”
+  - “Recomputed value from CSV”
+- Explain the difference honestly.
+
+============================================================
+PROJECT INFORMATION FROM THE STAGE 5 REPORT
+============================================================
+
+The Stage 5 report describes:
+
+Title:
+FMCG Sales Data Analytics — Stage 5 Report
+
+Project:
+Smart Supply Chain Intelligence
+
+Core focus:
+Dashboard design, stakeholder reporting, recommendations, KPI logic, and Power BI reporting
+
+Reported dataset information:
+
+- 190,740 records
+- 14 columns
+- Period: 2022 to 2024
+- 20 product categories
+- 5 regions
+- 4 sales channels
+- The report mentions 10 brands in one section
+
+Core stakeholders:
+
+- Business Managers
+- Marketing Team
+- Supply Chain Team
+- Inventory Managers
+
+Main dashboard KPIs:
+
+- Total Revenue
+- Sell-Through Rate
+- Fill Rate
+- Demand Coverage Days
+- Average Delivery Days
+- Daily Sales
+- Promotion Lift
+- Brand Share
+- Regional Demand Coverage
+- Stock vs Sales
+
+Reported dashboard headline values:
+
+- Final Sell-Through Rate: 23.68%
+- Final Fill Rate: 90.76%
+- Daily Sales: 2165.62
+- Average Delivery Days by Channel:
+  - Online: 297.15 in the captured visual aggregation
+  - Kirana: 299.76
+  - Retail: 300.36
+  - Supermarket: 304.18
+- Final DCR by Region:
+  - Central India: 3,946,334
+  - West India: 3,876,356
+  - East India: 3,814,265
+  - South India: 3,806,763
+- Promotion Lift by Brand:
+  - Patanjali: 0.41
+  - Nestle: 0.37
+  - Britannia: 0.36
+  - HUL: 0.35
+- Final STR by Day:
+  - Approximate observed range: 20.59% to 25.83%
+
+Important caution:
+
+The report’s captured “Average Delivery Days by Channel” values around 297–304 appear to be aggregated visual values, not literal average delivery days. The raw field is described as having only values from 1 to 5. Therefore:
+
+- Recompute actual average delivery days from the CSV.
+- Do not display 297–304 as literal days.
+- Keep the reported chart values only in a “Reported Dashboard Artifact” note if needed.
+- Use the correct 1–5 day analysis in the final website.
+
+Stage 5 dashboard design principles:
+
+- One question per visual
+- Color carries meaning
+- Filters first
+- Single-screen dashboard pages
+- Numbers shown directly on charts
+- Plain-English chart titles
+- Keyboard-usable slicers
+- No 3D charts
+- No misleading truncated axes
+- Values shown even if color is removed
+- Accessible labels and tooltips
+
+Stage 5 data pipeline:
+
+Raw CSV
+→ Stage 1 EDA
+→ Stage 2 Cleaning
+→ Stage 3 Feature Engineering
+→ Power BI / Dashboard Model
+→ KPI Measures
+→ Stakeholder Reporting
+
+Feature-engineered fields mentioned in the report:
+
+- total_revenue
+- sell_through_rate
+- fill_rate
+- demand_coverage_days
+- daily_sales
+- month
+- day_of_week
+- is_weekend
+
+Tool stack mentioned:
+
+- Power BI Desktop
+- Power Query
+- DAX
+- Native charts
+- Conditional formatting
+- Power BI Service
+
+The new website should preserve the analytical logic but implement it using static web technology.
+
+============================================================
+PROJECT INFORMATION FROM THE FINAL JURY PRESENTATION
+============================================================
+
+The Final Jury Presentation describes:
+
+Project:
+Smart Supply Chain Intelligence — FMCG Dashboard and Data Ethics
+
+Author:
+Shivangi Dwivedi
+
+Course:
+B.Tech Artificial Intelligence
+
+Institution:
+JLU
+
+Student ID shown in the source:
+JU09133 / JLU09133 appears in different source pages.
+Use the exact verified form from the final source files and do not silently normalize it.
+
+Presentation sections:
+
+- Data Ethics
+- Exploratory Data Analysis
+- Dataset Snapshot
+- Core Analysis Goals
+- Data Cleaning and KPIs
+- Category Revenue Share
+- Dashboard Overview
+- Practical Recommendations
+- Final Project Summary
+
+Data ethics pillars:
+
+1. Privacy
+2. Transparency
+3. Fairness
+4. Accountability
+
+Data ethics explanation:
+
+Responsible, fair, transparent, and accountable use of data so people remain protected while technology creates value.
+
+The website should include a short Data Ethics section showing:
+
+- Privacy
+- Transparency
+- Fairness
+- Accountability
+- Data minimization
+- Explainability
+- Clear limitations
+- No personal-data claims
+- No individual customer profiling
+
+Presentation dataset snapshot:
+
+- 190,740 transactions
+- 20 categories
+- 18 brands
+- Period: 2022 to 2024
+- Major regions of India
+
+Important discrepancy:
+
+- The Stage 5 report mentions 10 brands in one section.
+- The presentation mentions 18 brands.
+- The website must not choose one blindly.
+- The Python analysis must calculate the actual unique brand count.
+- Add a “Source Reconciliation” note:
+  - Reported count in report
+  - Reported count in presentation
+  - Verified count from CSV
+
+Core analysis goals from the presentation:
+
+- Revenue leaders
+- Promotion lift
+- Supply-chain health
+- Stock risk
+
+Reported KPI values in the presentation:
+
+- Total Revenue: Rs 126.61 Cr
+- Fill Rate: 90.82%
+- Average Delivery Time: 3.0 Days
+- Units Sold: 13.47 Million
+
+Reported top-category indicators:
+
+- Tea: 92%
+- Milk: 76%
+- Butter: 68%
+- Snacks: 55%
+
+Treat these percentages as presentation-level category performance indicators unless the CSV confirms their exact formula.
+
+Practical recommendations in the presentation:
+
+Inventory:
+- Prioritize stock for Tea, Coffee, and Milk
+
+Marketing:
+- Expand promotions in North and West regions
+
+Supply Chain:
+- Improve fill rate toward a 95% target
+
+Ethics:
+- Use transparent and auditable AI applications
+
+Final project narrative:
+
+The project connects responsible technology with practical analytics.
+Better sales tracking and smarter inventory decisions lead to a more ethical and efficient FMCG supply chain.
+
+============================================================
+PHASE 1 — ANALYZE THE CSV USING PYTHON
+============================================================
+
+Use:
+
+- pandas
+- numpy
+- matplotlib
+- scipy where statistically appropriate
+- json
+- pathlib
+
+Do not build the website before completing this analysis.
+
+------------------------------------------------------------
+1. Dataset Inspection
+------------------------------------------------------------
+
+Analyze:
+
+- Number of rows
+- Number of columns
+- Column names
+- Data types
+- Date range
+- Missing values
+- Duplicate rows
+- Invalid or negative values
+- Zero values
+- Outliers
+- Unique brands
+- Unique SKUs
+- Unique categories
+- Unique segments
+- Unique channels
+- Unique regions
+- Unique pack types
+- Promotion flag distribution
+- Delivery-day distribution
+
+Validate expected columns:
+
+date
+sku
+brand
+segment
+category
+channel
+region
+pack_type
+price_unit
+promotion_flag
+delivery_days
+stock_available
+delivered_qty
+units_sold
+
+Cleaning rules:
+
+- Convert date into datetime
+- Convert numeric fields safely
+- Standardize region names:
+  - WestIndia → West India
+  - EastIndia → East India
+  - SouthIndia → South India
+  - CentralIndia → Central India
+  - NorthIndia → North India
+- Standardize category, brand, pack type, channel, and segment labels
+- Strip whitespace
+- Handle missing values logically
+- Flag duplicate records
+- Detect impossible values
+- Do not silently delete rows
+- Create a cleaning log
+- Report:
+  - rows before cleaning
+  - rows after cleaning
+  - rows removed
+  - rows corrected
+  - rows flagged
+
+------------------------------------------------------------
+2. Derived Business Metrics
+------------------------------------------------------------
+
+Create:
+
+revenue = price_unit * units_sold
+
+available_supply = stock_available + delivered_qty
+
+sell_through_rate = units_sold / available_supply
+
+fill_rate_raw = delivered_qty / units_sold
+
+inventory_remaining = available_supply - units_sold
+
+stock_utilization = units_sold / available_supply
+
+delivery_status:
+- 0–2 days = Healthy
+- Above 2–4 days = Watch
+- Above 4 days = Critical
+
+promotion_label:
+- 1 = Promotion
+- 0 = No Promotion
+
+Date fields:
+
+- year
+- quarter
+- month
+- month_name
+- week
+- day
+- day_name
+- is_weekend
+
+Business helper fields:
+
+- revenue_band
+- price_band
+- stock_risk_flag
+- overstock_flag
+- low_velocity_flag
+- high_velocity_flag
+- reorder_priority_score
+- overstock_risk_score
+
+Handle division by zero safely.
+
+Do not automatically accept the PDF’s KPI formulas if they produce implausible outputs.
+Recompute and document formulas.
+
+------------------------------------------------------------
+3. KPI Reconciliation
+------------------------------------------------------------
+
+Create a reconciliation table for:
+
+- Total Revenue
+- Total Units Sold
+- Fill Rate
+- Sell-Through Rate
+- Average Delivery Days
+- Promotion Lift
+- Number of Brands
+- Number of Categories
+- Number of Regions
+- Number of Channels
+- Date Range
+- Record Count
+
+For each KPI show:
+
+- Reported value from Stage 5 PDF
+- Reported value from Presentation PDF
+- Recomputed value from CSV
+- Difference
+- Possible reason for difference
+- Final value used on website
+
+Do not hide inconsistencies.
+
+------------------------------------------------------------
+4. Deep Revenue Analysis
+------------------------------------------------------------
+
+Calculate:
+
+- Total revenue
+- Monthly revenue
+- Quarterly revenue
+- Yearly revenue
+- Month-over-month growth
+- Year-over-year growth
+- Revenue by brand
+- Revenue by category
+- Revenue by segment
+- Revenue by region
+- Revenue by channel
+- Revenue by pack type
+- Average selling price
+- Revenue per transaction
+- Top 10 SKUs by revenue
+- Bottom 10 SKUs by revenue
+- Revenue concentration by top brands
+- Brand market share
+- Category contribution
+- Region contribution
+- Channel contribution
+- Pareto analysis
+- Cumulative contribution
+- High-growth and low-growth groups
+
+------------------------------------------------------------
+5. Deep Sales Analysis
+------------------------------------------------------------
+
+Calculate:
+
+- Total units sold
+- Average daily units sold
+- Median units sold
+- Monthly units sold
+- Quarterly units sold
+- Yearly units sold
+- Sales growth
+- Units sold by brand
+- Units sold by category
+- Units sold by channel
+- Units sold by region
+- Units sold by pack type
+- Top-selling SKUs
+- Bottom-selling SKUs
+- Weekday vs weekend sales
+- Day-of-week pattern
+- Month-over-month change
+- Seasonal pattern
+- High-volume periods
+- Low-volume periods
+- Sales velocity by category
+- Sales volatility
+- Coefficient of variation
+
+------------------------------------------------------------
+6. Promotion Analysis
+------------------------------------------------------------
+
+Compare promoted and non-promoted records.
+
+Calculate:
+
+- Units sold during promotions
+- Units sold without promotions
+- Revenue during promotions
+- Revenue without promotions
+- Mean units sold by promotion status
+- Median units sold by promotion status
+- Mean revenue by promotion status
+- Median revenue by promotion status
+- Promotion lift in units sold
+- Promotion lift in revenue
+- Promotion lift by brand
+- Promotion lift by category
+- Promotion lift by region
+- Promotion lift by channel
+- Best promotional combinations
+- Weak promotional combinations
+- Negative-response promotions
+- Promotion performance by price band
+- Promotion performance by pack type
+- Weekend promotion response
+- Weekday promotion response
+
+Important:
+
+Promotion analysis is observational.
+Do not claim causation unless justified.
+Display this disclaimer clearly:
+
+“The analysis identifies associations in the available dataset and does not prove causal impact.”
+
+------------------------------------------------------------
+7. Inventory Analysis
+------------------------------------------------------------
+
+Calculate:
+
+- Stock available
+- Delivered quantity
+- Available supply
+- Units sold
+- Remaining inventory
+- Sell-through rate
+- Stock utilization
+- Stockout-risk SKUs
+- Overstock-risk SKUs
+- Dead-stock candidates
+- Low-stock high-sales combinations
+- High-stock low-sales combinations
+- Category-level stock health
+- Brand-level stock health
+- Region-level stock imbalance
+- Channel-level stock imbalance
+- Reorder-priority score
+- Overstock-risk score
+- Inventory days proxy
+- Inventory risk matrix
+
+Reorder-priority score should use:
+
+- Low current stock
+- High units sold
+- High sell-through
+- Long delivery time
+- Low fill rate
+
+Overstock-risk score should use:
+
+- High available stock
+- Low units sold
+- Low sell-through
+- Low promotion response
+- Slow recent sales
+
+Document the formula and normalize score to 0–100.
+
+------------------------------------------------------------
+8. Supply-Chain Analysis
+------------------------------------------------------------
+
+Calculate:
+
+- Average delivery days
+- Median delivery days
+- Delivery-day distribution
+- Delivery by channel
+- Delivery by region
+- Delivery by brand
+- Delivery by category
+- Healthy delivery percentage
+- Watch delivery percentage
+- Critical delivery percentage
+- Fill-rate performance
+- Fill rate by region
+- Fill rate by channel
+- Fill rate by brand
+- Fill rate by category
+- Channel consistency
+- Regional bottlenecks
+- Fastest channel
+- Slowest channel
+- Fastest region
+- Slowest region
+- Delivery impact on units sold
+- Delivery impact on revenue
+- Critical-delivery SKU table
+- Operational alert candidates
+
+Use delivery status:
+
+- Healthy: 0–2 days
+- Watch: >2–4 days
+- Critical: >4 days
+
+Use premium non-blue colors:
+
+- Healthy: muted emerald
+- Watch: warm amber
+- Critical: muted coral
+
+Always show labels and values, not color alone.
+
+------------------------------------------------------------
+9. Price Analysis
+------------------------------------------------------------
+
+Calculate:
+
+- Price distribution
+- Mean price
+- Median price
+- Price standard deviation
+- Price by brand
+- Price by category
+- Price by pack type
+- Price by region
+- Price by channel
+- Price vs units sold
+- Price vs revenue
+- Price vs promotion response
+- Price elasticity proxy
+- High-price high-demand products
+- Low-price low-demand products
+- Outlier prices
+- Price-band contribution
+
+------------------------------------------------------------
+10. Correlation and Relationship Analysis
+------------------------------------------------------------
+
+Analyze relationships between:
+
+- Price and units sold
+- Promotion and units sold
+- Delivery days and units sold
+- Stock available and units sold
+- Delivered quantity and units sold
+- Price and revenue
+- Promotion and revenue
+- Sell-through and promotion
+- Delivery days and fill rate
+- Stock and revenue
+
+Do not confuse correlation with causation.
+
+------------------------------------------------------------
+11. Statistical Analysis
+------------------------------------------------------------
+
+Include:
+
+- Mean
+- Median
+- Standard deviation
+- Minimum
+- Maximum
+- Quartiles
+- Interquartile range
+- Outlier detection using IQR
+- Skewness
+- Coefficient of variation
+- Correlation matrix
+- Promotion vs non-promotion comparison
+- Weekday vs weekend comparison
+- Region comparison
+- Channel comparison
+
+Where statistically meaningful, perform:
+
+- t-test or Mann-Whitney U test
+- Effect-size estimation
+- Confidence intervals
+- ANOVA or Kruskal-Wallis for multi-group comparisons
+
+Clearly show:
+
+- Test used
+- Assumptions
+- Null hypothesis
+- Test statistic
+- p-value
+- Effect size
+- Business interpretation
+- Limitation
+
+------------------------------------------------------------
+12. Management Insights
+------------------------------------------------------------
+
+Generate at least:
+
+- 8 business insights
+- 8 inventory insights
+- 6 supply-chain insights
+- 6 promotion insights
+- 5 regional insights
+- 5 category insights
+- 5 actionable recommendations
+- 5 risks and limitations
+
+Every insight must include:
+
+- Observation
+- Evidence
+- Business meaning
+- Recommended action
+- Related chart
+- Stakeholder
+
+Do not use generic claims without numbers.
+
+------------------------------------------------------------
+13. Export Files for Website
+------------------------------------------------------------
+
+Generate:
+
+assets/data/summary.json
+assets/data/monthly_trends.json
+assets/data/yearly_trends.json
+assets/data/brand_analysis.json
+assets/data/category_analysis.json
+assets/data/region_analysis.json
+assets/data/channel_analysis.json
+assets/data/segment_analysis.json
+assets/data/pack_analysis.json
+assets/data/promotion_analysis.json
+assets/data/inventory_risk.json
+assets/data/supply_chain.json
+assets/data/price_analysis.json
+assets/data/statistical_analysis.json
+assets/data/kpi_reconciliation.json
+assets/data/insights.json
+assets/data/metadata.json
+assets/data/table_sample.json
+
+Also generate:
+
+assets/data/analysis_summary.csv
+assets/data/top_skus.csv
+assets/data/inventory_risk.csv
+assets/data/overstock_risk.csv
+assets/data/cleaned_sample.csv
+assets/data/kpi_reconciliation.csv
+
+Do not load the full 190,740-row CSV directly into the browser.
+
+For browser performance:
+
+- Use aggregated JSON
+- Export only a representative or paginated sample for the table
+- Lazy-load analysis sections
+- Debounce search
+- Limit DOM rows
+- Use client-side pagination
+- Clearly explain that the full CSV was analyzed in Python
+
+============================================================
+PHASE 2 — BUILD THE PREMIUM STATIC WEBSITE
+============================================================
+
+The website must combine:
+
+1. Landing page
+2. Project overview
+3. Interactive analytics dashboard
+4. Dataset presentation
+5. Deep analysis
+6. Statistical analysis
+7. Methodology
+8. Recommendations
+9. Ethics
+10. Project report PDFs
+11. Portfolio case study
+
+It must not look like a basic admin panel.
+
+============================================================
+VISUAL DIRECTION
+============================================================
+
+No blue.
+
+Use a premium palette:
+
+--background: #0E0D0B;
+--surface: #171410;
+--surface-soft: #201C17;
+--surface-raised: #272119;
+
+--primary: #D8B36A;
+--primary-soft: #E7C982;
+--accent: #A67C52;
+
+--emerald: #6D9B74;
+--amber: #C9913E;
+--coral: #C66B5D;
+
+--text-primary: #F4EFE7;
+--text-secondary: #BEB4A5;
+--border: rgba(216, 179, 106, 0.18);
+
+Optional light sections:
+
+--light-background: #F6F0E7;
+--light-surface: #FFFDF8;
+--light-text: #211D18;
+
+The website should feel like:
+
+- luxury editorial website
+- premium consulting report
+- elegant FMCG intelligence platform
+- sophisticated portfolio case study
+
+Avoid:
+
+- blue
+- neon
+- overly glowing cards
+- excessive glassmorphism
+- rainbow charts
+- gradients everywhere
+- default Bootstrap appearance
+- childish rounded UI
+- too many cards
+- giant empty sections
+- emoji icons
+
+Typography:
+
+Headings:
+- Playfair Display
+- Cormorant Garamond
+- DM Serif Display
+- Fraunces
+
+Body:
+- Inter
+- Manrope
+- Plus Jakarta Sans
+- Geist
+
+Use SVG icons:
+
+- Lucide
+- Heroicons
+- Custom inline SVG
+- Warehouse
+- Truck
+- Package
+- Retail shelf
+- Inventory
+- Analytics
+- India-region abstraction
+- Supply-chain flow
+
+Do not use emoji as UI icons.
+
+============================================================
+WEBSITE STRUCTURE
+============================================================
+
+------------------------------------------------------------
+1. Landing Page
+------------------------------------------------------------
+
+Hero:
+
+Title:
+Smart Supply Chain Intelligence
+
+Subtitle:
+Turning 190,740 FMCG transactions into actionable sales, inventory, promotion, and logistics intelligence.
+
+Metadata:
+
+- 190,740 records
+- 14 core variables
+- 2022–2024
+- Multi-brand FMCG analysis
+- 20 categories
+- 5 regions
+- 4 channels
+- Verified brand count from CSV
+
+Buttons:
+
+- Explore Dashboard
+- View Full Report
+- View Presentation
+- Explore Dataset
+
+Include a premium SVG supply-chain illustration.
+
+Use subtle motion only.
+
+------------------------------------------------------------
+2. Project Overview
+------------------------------------------------------------
+
+Explain:
+
+- Business problem
+- Project objective
+- Dataset
+- Stakeholders
+- Tools
+- Main outcomes
+
+Business problem:
+
+FMCG companies struggle to balance demand, inventory availability, promotion effectiveness, delivery speed, and regional performance.
+
+Project objective:
+
+Transform raw FMCG transaction data into a decision-support system for business, marketing, inventory, and supply-chain teams.
+
+Stakeholders:
+
+- Business Managers
+- Marketing Team
+- Supply Chain Team
+- Inventory Managers
+
+------------------------------------------------------------
+3. Dataset Preview
+------------------------------------------------------------
+
+Present actual data.
+
+Include:
+
+- Schema
+- Column definitions
+- Data types
+- Sample rows
+- Search
+- Sort
+- Pagination
+- Filters
+- Column selector
+- Export filtered CSV
+- Row detail modal
+- Data-quality summary
+
+Show:
+
+- Missing values
+- Duplicate count
+- Date range
+- Brands
+- SKUs
+- Categories
+- Regions
+- Channels
+- Pack types
+- Segments
+
+------------------------------------------------------------
+4. Executive Dashboard
+------------------------------------------------------------
+
+KPI cards:
+
+- Total Revenue
+- Total Units Sold
+- Average Price
+- Average Delivery Days
+- Fill Rate
+- Sell-Through Rate
+- Promotion Lift
+- Number of SKUs
+
+Each KPI must show:
+
+- Value
+- Formula tooltip
+- Comparison
+- Context
+- Small sparkline
+- Reported vs recomputed status if relevant
+
+------------------------------------------------------------
+5. Revenue Analysis
+------------------------------------------------------------
+
+Include:
+
+- Monthly revenue trend
+- Year-over-year growth
+- Revenue by brand
+- Revenue by category
+- Revenue by region
+- Revenue by channel
+- Revenue by pack type
+- Top SKU table
+- Pareto chart
+- Contribution analysis
+- Revenue concentration insight
+
+------------------------------------------------------------
+6. Sales Analysis
+------------------------------------------------------------
+
+Include:
+
+- Units sold trend
+- Daily sales
+- Monthly sales
+- Weekday vs weekend
+- Brand ranking
+- Category velocity
+- Channel performance
+- Seasonal heatmap
+- Top and bottom SKUs
+- Sales distribution
+
+------------------------------------------------------------
+7. Inventory Intelligence
+------------------------------------------------------------
+
+Include:
+
+- Sell-through gauge
+- Inventory remaining
+- Stock utilization
+- Stockout-risk table
+- Overstock-risk table
+- Reorder-priority table
+- Dead-stock candidates
+- Stock vs units-sold scatter
+- Brand-category inventory matrix
+- Regional stock imbalance
+- Inventory health distribution
+
+------------------------------------------------------------
+8. Supply Chain
+------------------------------------------------------------
+
+Include:
+
+- Average delivery days
+- Delivery by channel
+- Delivery by region
+- Delivery-status distribution
+- Fill rate by region
+- Fill rate by category
+- Delayed SKU table
+- Bottleneck matrix
+- Delivery vs sales relationship
+- Operational alerts
+
+Statuses:
+
+- Healthy
+- Watch
+- Critical
+
+------------------------------------------------------------
+9. Promotion Analysis
+------------------------------------------------------------
+
+Include:
+
+- Promotion vs non-promotion units sold
+- Promotion vs non-promotion revenue
+- Lift by brand
+- Lift by category
+- Lift by region
+- Lift by channel
+- Strong campaigns
+- Weak campaigns
+- Promotion heatmap
+- Strategy recommendations
+
+Display:
+
+“The analysis identifies associations and does not prove causal impact.”
+
+------------------------------------------------------------
+10. Regional Analysis
+------------------------------------------------------------
+
+Include:
+
+- Regional revenue
+- Regional contribution
+- Regional units sold
+- Regional fill rate
+- Regional delivery
+- Regional promotion response
+- Regional category mix
+- Regional inventory risk
+
+Use an India-inspired SVG abstraction.
+
+Do not use an inaccurate geographical map without proper coordinates.
+
+------------------------------------------------------------
+11. Deep Insights
+------------------------------------------------------------
+
+Each insight block must contain:
+
+- Title
+- Key number
+- Explanation
+- Business impact
+- Recommended action
+- Supporting chart
+- Stakeholder label
+
+------------------------------------------------------------
+12. Statistical Analysis
+------------------------------------------------------------
+
+Include a switch:
+
+- Business View
+- Technical View
+
+Business View:
+- Plain-language explanation
+
+Technical View:
+- Formula
+- Test
+- p-value
+- Effect size
+- Confidence interval
+- Assumptions
+
+------------------------------------------------------------
+13. Methodology
+------------------------------------------------------------
+
+Use an SVG pipeline:
+
+Raw CSV
+→ Validation
+→ Cleaning
+→ Feature Engineering
+→ EDA
+→ KPI Construction
+→ Business Insights
+→ Interactive Dashboard
+
+Include:
+
+- Tools
+- Formulas
+- Assumptions
+- Limitations
+- Ethics
+
+------------------------------------------------------------
+14. Recommendations
+------------------------------------------------------------
+
+Business Managers:
+
+- Regional investment
+- Brand growth
+- Revenue concentration
+- Performance monitoring
+
+Marketing:
+
+- Promotion scaling
+- Weak campaign reduction
+- Category targeting
+- Channel strategy
+
+Inventory:
+
+- Reorder triggers
+- Overstock clearance
+- SKU rationalization
+- Safety stock tuning
+
+Supply Chain:
+
+- Delivery alerts
+- Carrier review
+- Regional replenishment
+- Fill-rate improvement
+
+Every recommendation must reference actual evidence.
+
+------------------------------------------------------------
+15. Ethics Section
+------------------------------------------------------------
+
+Use the four pillars:
+
+- Privacy
+- Transparency
+- Fairness
+- Accountability
+
+Explain:
+
+- Dataset is transaction-level and aggregated
+- No customer names
+- No personal purchase history
+- No individual profiling
+- No unfair blame toward brands
+- Recommendations are framed as opportunities
+- All formulas and limitations should be visible
+- Color is never the only signal
+
+------------------------------------------------------------
+16. Project PDF Section
+------------------------------------------------------------
+
+Attach both PDFs.
+
+PDF 1:
+Stage 5 Dashboard Report
+- 21 pages
+- Dashboard design
+- Stakeholder reporting
+- KPI color logic
+- Findings
+- Recommendations
+- Risks and limitations
+- DAX and schema appendix
+
+PDF 2:
+Final Jury Presentation
+- 16 slides
+- Data ethics
+- EDA
+- Dataset overview
+- KPIs
+- Dashboard
+- Recommendations
+- Final summary
+
+Include:
+
+- Embedded preview
+- Open full-screen
+- Download
+- Report metadata
+- Presentation metadata
+
+------------------------------------------------------------
+17. Portfolio Case Study
+------------------------------------------------------------
+
+Include:
+
+- Project title
+- Role
+- Problem
+- Approach
+- Dataset
+- Tools
+- Challenges
+- Solutions
+- Results
+- Key learnings
+- Future work
+
+Author section:
+
+Shivangi Dwivedi
+B.Tech Artificial Intelligence
+JLU
+
+Verify and display the correct student ID from the uploaded source.
+
+============================================================
+USER EXPERIENCE
+============================================================
+
+Implement:
+
+- Smooth scrolling
+- Sticky navigation
+- Active-section indicator
+- Subtle reveal animations
+- Mobile menu
+- Keyboard-accessible controls
+- Focus states
+- Tooltips
+- Loading skeletons
+- Empty states
+- Reset filters
+- Save chart as image
+- Export filtered CSV
+- Print-friendly report layout
+- Responsive tables
+- No page reloads
+- No scroll hijacking
+- No autoplay carousels
+- No distracting animations
+
+============================================================
+FILTERING
+============================================================
+
+All charts and tables should react to:
+
+- Date
+- Brand
+- Category
+- Region
+- Channel
+- Segment
+- Pack type
+- Promotion status
+
+Include:
+
+- Global filter bar
+- Selected-filter chips
+- Reset-all button
+- Result count
+- Clear filter state
+
+============================================================
+CHART RULES
+============================================================
+
+Use:
+
+- Line charts for trends
+- Horizontal bars for ranking
+- Stacked bars for composition
+- Heatmaps for seasonal and matrix analysis
+- Scatter plots for relationships
+- Box plots for distributions
+- Donut only for small category counts
+- Gauge only for 1–2 top KPIs
+- Pareto for contribution
+- Tables for precise records
+
+Avoid:
+
+- 3D charts
+- Large pie charts
+- Radar charts without purpose
+- Truncated axes
+- Too many gauges
+- Slow chart animation on every filter
+- Misleading scales
+
+============================================================
+RESPONSIVENESS
+============================================================
+
+Support:
+
+- 1440px desktop
+- 1024px laptop
+- Tablet
+- Mobile
+
+On mobile:
+
+- Stack cards
+- Keep charts readable
+- Use filter drawer
+- Use compact menu
+- Allow horizontal table scroll
+- Reduce visual clutter
+
+============================================================
+PERFORMANCE
+============================================================
+
+Because the dataset has around 190,740 rows:
+
+- Analyze with Python
+- Export aggregated JSON
+- Do not load all rows into the browser
+- Lazy-load sections
+- Paginate data table
+- Debounce search
+- Limit DOM rendering
+- Resize charts efficiently
+- Minify assets
+- Use compressed JSON if needed
+
+Target:
+
+- Lighthouse Performance: 85+
+- Accessibility: 90+
+- Best Practices: 90+
+- SEO: 90+
+
+============================================================
+FILE STRUCTURE
+============================================================
+
+fmcg-portfolio/
+│
+├── index.html
+├── dashboard.html
+├── analysis.html
+├── data-explorer.html
+├── methodology.html
+├── report.html
+│
+├── css/
+│   ├── variables.css
+│   ├── global.css
+│   ├── landing.css
+│   ├── dashboard.css
+│   ├── responsive.css
+│   └── animations.css
+│
+├── js/
+│   ├── app.js
+│   ├── filters.js
+│   ├── charts.js
+│   ├── data-table.js
+│   ├── insights.js
+│   └── report.js
+│
+├── python/
+│   ├── analyze_data.py
+│   ├── clean_data.py
+│   ├── generate_insights.py
+│   ├── reconcile_kpis.py
+│   └── export_web_data.py
+│
+├── assets/
+│   ├── icons/
+│   ├── illustrations/
+│   ├── images/
+│   ├── pdf/
+│   └── data/
+│
+└── README.md
+
+A modular one-page SPA is also acceptable.
+
+============================================================
+FINAL OUTPUT REQUIRED
+============================================================
+
+Generate:
+
+1. Full Python analysis code
+2. Cleaning report
+3. KPI reconciliation report
+4. Cleaned dataset summary
+5. Derived KPI JSON files
+6. Statistical analysis output
+7. Deep insight JSON
+8. Complete static website
+9. Premium CSS design system
+10. SVG icons and illustrations
+11. Interactive charts
+12. Searchable dataset table
+13. Attached PDF section
+14. Portfolio case study
+15. README
+16. Local run instructions
+17. Deployment instructions
+18. KPI formula documentation
+19. Honest limitations section
+20. Source-reconciliation section
+
+Final rule:
+
+First analyze the CSV using Python.
+Then verify the PDF values.
+Then export optimized data.
+Only after that build the website.
+
+Do not create a fake dashboard mockup.
+Do not use blue.
+Do not use invented statistics.
+Do not hide inconsistencies.
+Make it premium, attractive, smooth, usable, data-rich, and ready for a professional portfolio.
